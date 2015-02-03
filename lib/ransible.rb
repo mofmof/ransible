@@ -11,6 +11,7 @@ module Ransible
   	def run
       log = run_ansible
       p "executed ansible"
+      # HACK result = Result.new(log: log)のようにしたい
       result = Result.new
       result.log = log
       result
