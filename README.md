@@ -1,6 +1,6 @@
 # Ransible
 
-TODO: Write a gem description
+Run Ansible from Ruby.
 
 ## Installation
 
@@ -16,9 +16,22 @@ Or install it yourself as:
 
     $ gem install ransible
 
+Install ansible with Homebrew:
+
+    $ brew install ansible
+
+
 ## Usage
 
-TODO: Write usage instructions here
+Run ansible playbook.
+
+```
+result = Ransible::Runner.new('/path/to/playbook.yml', '/path/to/inventory).run
+
+puts result.log
+=> run playbook log.
+```
+
 
 ## Contributing
 
