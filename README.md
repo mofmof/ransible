@@ -26,7 +26,7 @@ Install ansible with Homebrew:
 Run ansible playbook.
 
 ```
-result = Ransible::Runner.new('/path/to/playbook.yml', '/path/to/inventory).run
+result = Ransible::Runner.new('/path/to/playbook.yml', '/path/to/inventory').run
 
 puts result.log
 => run playbook log.
